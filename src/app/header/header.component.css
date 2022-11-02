@@ -1,0 +1,30 @@
+body { 
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	background-color:dimgray;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding : 10px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.5);
+}
+  
+li {
+	float: left;
+}
+  
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 75.2px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: rgba(0,0,0,0.5);
+}

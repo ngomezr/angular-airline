@@ -1,0 +1,28 @@
+<!-- We need to create form to Post the data -->
+
+<form [formGroup]="profileForm" (ngSubmit)="submit()">
+    <!-- <form action="action_page.php" method="post"> -->
+    <div class="imgcontainer">
+
+    </div>
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h4>
+                <input type="text" placeholder="Enter id" name="employeeId" required formControlName="employeeId">
+                <br>
+                <input type="text" placeholder="Enter name" name="empName" formControlName="empName">
+                <br>
+                <input type="text" placeholder="Enter department" name="empDept" required formControlName="empDept">
+                <br>
+                <input type="text" placeholder="Enter salary" name="salary" required formControlName="salary">
+                <br>
+
+                <button type="submit">Register</button><br>
+
+            </h4>
+        </div>
+    </div>
+    <div class="jumbotron text-center">
+        <h1 style="color:white">{{ ack | uppercase }}</h1>
+    </div>
+</form>

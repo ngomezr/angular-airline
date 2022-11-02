@@ -1,0 +1,46 @@
+<body>
+    <div class="jumbotron text-center">
+        <h1 style="text-align:center;"> Home Page </h1>
+        <div>
+            <img src="https://www.revfine.com/wp-content/uploads/airline-industry.jpg" class="image-scale">
+        </div>
+        <h2>
+            What is the Difference Between the Airline Industry and the Aviation Industry?
+            <br> <br>
+            <span style="padding-left: 50px"></span>The terms ‘airline industry’ and ‘aviation industry’ are sometimes thought of as being synonymous, but in reality, they have different meanings. As stated, the airline industry refers to companies that offer air transport services to paying customers, whereas the aviation industry includes all aviation-related businesses.
+            
+            With this in mind, the airline industry can be classed as just one sector of the wider aviation industry. In addition to this sector, aviation companies would also include businesses like aircraft manufacturers, companies offering non-commercial flights, aerospace companies, regulation authorities and those involved with research.
+        </h2>
+        <br> <br> <br>
+        <h2>
+            What is the Difference Between the Airline Industry and the Aviation Industry?
+            <br> <br>
+            <span style="padding-left: 50px"></span>The terms ‘airline industry’ and ‘aviation industry’ are sometimes thought of as being synonymous, but in reality, they have different meanings. As stated, the airline industry refers to companies that offer air transport services to paying customers, whereas the aviation industry includes all aviation-related businesses.
+            
+            With this in mind, the airline industry can be classed as just one sector of the wider aviation industry. In addition to this sector, aviation companies would also include businesses like aircraft manufacturers, companies offering non-commercial flights, aerospace companies, regulation authorities and those involved with research.
+        </h2>
+         <td> <button class="btn btn-danger btn-rounded" (click)="readUser()"> Display Employee's </button></td>
+        <div>
+            <h2> Employee's List </h2>
+            <table class="table ">
+                <tr>
+                    <th scope="col">#</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Delete Employee</th>
+                </tr>
+                <tr *ngFor="let user of users">
+                    <th scope="row">#</th>
+                    <td>{{ user.employeeId }}</td>
+                    <td>{{ user.empName }}</td>
+                    <td>{{ user.empDept }}</td>
+                    <td>{{ user.salary }}</td>
+                    <td> <button class="btn btn-danger btn-rounded" (click)="deleteUser(user.employeeId)"> Delete </button></td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </div>
+</body>

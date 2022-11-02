@@ -1,0 +1,37 @@
+<body>
+    <div class="jumbotron text-center">
+        <h1 style="text-align:center;"> About </h1>
+        <h2>
+            What is the Airline Industry?
+            <br> <br>
+            <span style="padding-left: 50px"></span>The airline industry encompasses a wide range of businesses, called airlines, which offer air transport services for paying customers or business partners. These air transport services are provided for both human travellers and cargo, and are most commonly offered via jets, although some airlines also use helicopters.
+            
+            Airlines may offer scheduled and/or chartered services and the airline industry forms a key part of the wider travel industry, providing customers with the ability to purchase seats on flights and travel to different parts of the world. The airline industry offers a variety of career paths, including pilots, flight attendants and ground crew.
+        </h2>
+        <td> <button class="btn btn-danger btn-rounded" (click)="readUser()"> Display Payroll's </button></td>
+        <div>
+            <h2> Payroll List </h2>
+            <table class="table ">
+                <tr>
+                    <th scope="col">#</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Days Worked</th>
+                    <th>Tax Paid</th>
+                    <th>Delete Payroll Info</th>
+                </tr>
+                <tr *ngFor="let user of users">
+                    <th scope="row">#</th>
+                    <td>{{ user.payId }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.amount }}</td>
+                    <td>{{ user.daysWorked }}</td>
+                    <td>{{ user.taxPaid }}</td>
+                    <td> <button class="btn btn-danger btn-rounded" (click)="deleteUser(user.employeeId)"> Delete </button></td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </div>
+</body>
